@@ -1,0 +1,402 @@
+[
+    {
+        "name": "Apple",
+        "emissionen": 49.02,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Microsoft",
+        "emissionen": 60.7,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Amazon",
+        "emissionen": 37.18,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Google",
+        "emissionen": 64.57,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Facebook",
+        "emissionen": 92.16,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Tesla",
+        "emissionen": 96.94,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Samsung",
+        "emissionen": 12.99,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Intel",
+        "emissionen": 52.11,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "IBM",
+        "emissionen": 96.56,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Sony",
+        "emissionen": 38.25,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Huawei",
+        "emissionen": 32.59,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Alibaba",
+        "emissionen": 83.39,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Toyota",
+        "emissionen": 62.8,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "BMW",
+        "emissionen": 71.5,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Volkswagen",
+        "emissionen": 42.38,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Nestle",
+        "emissionen": 72.58,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Procter & Gamble",
+        "emissionen": 40.54,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "PepsiCo",
+        "emissionen": 42.99,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Coca-Cola",
+        "emissionen": 10.92,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Nike",
+        "emissionen": 29.67,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Adidas",
+        "emissionen": 11.17,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Siemens",
+        "emissionen": 46.74,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "L'Oreal",
+        "emissionen": 97.93,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Cisco",
+        "emissionen": 83.97,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Oracle",
+        "emissionen": 14.86,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Dell",
+        "emissionen": 85.07,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "HP",
+        "emissionen": 29.68,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Xiaomi",
+        "emissionen": 36.37,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Tencent",
+        "emissionen": 19.83,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "PayPal",
+        "emissionen": 65.19,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Netflix",
+        "emissionen": 80.09,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Uber",
+        "emissionen": 40.79,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Airbnb",
+        "emissionen": 68.84,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "SpaceX",
+        "emissionen": 49.82,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Boeing",
+        "emissionen": 60.76,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "General Electric",
+        "emissionen": 68.61,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Ford",
+        "emissionen": 75.85,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Chevron",
+        "emissionen": 99.09,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "ExxonMobil",
+        "emissionen": 45.29,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Shell",
+        "emissionen": 23.46,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Unilever",
+        "emissionen": 66.74,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Pfizer",
+        "emissionen": 95.09,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Novartis",
+        "emissionen": 77.24,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Johnson & Johnson",
+        "emissionen": 81.94,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Visa",
+        "emissionen": 77.06,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "MasterCard",
+        "emissionen": 58.33,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Philips",
+        "emissionen": 64.83,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "LG",
+        "emissionen": 35.38,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Panasonic",
+        "emissionen": 22.77,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "Sony",
+        "emissionen": 8.52,
+        "type": "Unternehmen"
+    },
+    {
+        "name": "China",
+        "emissionen": 68.79,
+        "type": "Land"
+    },
+    {
+        "name": "United States",
+        "emissionen": 15.82,
+        "type": "Land"
+    },
+    {
+        "name": "India",
+        "emissionen": 30.11,
+        "type": "Land"
+    },
+    {
+        "name": "Russia",
+        "emissionen": 33.78,
+        "type": "Land"
+    },
+    {
+        "name": "Japan",
+        "emissionen": 52.64,
+        "type": "Land"
+    },
+    {
+        "name": "Germany",
+        "emissionen": 11.45,
+        "type": "Land"
+    },
+    {
+        "name": "United Kingdom",
+        "emissionen": 97.85,
+        "type": "Land"
+    },
+    {
+        "name": "Brazil",
+        "emissionen": 73.96,
+        "type": "Land"
+    },
+    {
+        "name": "Canada",
+        "emissionen": 99.54,
+        "type": "Land"
+    },
+    {
+        "name": "South Korea",
+        "emissionen": 97.34,
+        "type": "Land"
+    },
+    {
+        "name": "Mexico",
+        "emissionen": 85.08,
+        "type": "Land"
+    },
+    {
+        "name": "Australia",
+        "emissionen": 80.71,
+        "type": "Land"
+    },
+    {
+        "name": "Indonesia",
+        "emissionen": 86.55,
+        "type": "Land"
+    },
+    {
+        "name": "Saudi Arabia",
+        "emissionen": 17.33,
+        "type": "Land"
+    },
+    {
+        "name": "Turkey",
+        "emissionen": 5.02,
+        "type": "Land"
+    },
+    {
+        "name": "France",
+        "emissionen": 75.29,
+        "type": "Land"
+    },
+    {
+        "name": "Italy",
+        "emissionen": 5.09,
+        "type": "Land"
+    },
+    {
+        "name": "Spain",
+        "emissionen": 63.0,
+        "type": "Land"
+    },
+    {
+        "name": "South Africa",
+        "emissionen": 18.25,
+        "type": "Land"
+    },
+    {
+        "name": "Argentina",
+        "emissionen": 75.76,
+        "type": "Land"
+    },
+    {
+        "name": "Netherlands",
+        "emissionen": 79.34,
+        "type": "Land"
+    },
+    {
+        "name": "Iran",
+        "emissionen": 53.34,
+        "type": "Land"
+    },
+    {
+        "name": "Egypt",
+        "emissionen": 50.72,
+        "type": "Land"
+    },
+    {
+        "name": "Pakistan",
+        "emissionen": 67.36,
+        "type": "Land"
+    },
+    {
+        "name": "Thailand",
+        "emissionen": 22.74,
+        "type": "Land"
+    },
+    {
+        "name": "Vietnam",
+        "emissionen": 59.54,
+        "type": "Land"
+    },
+    {
+        "name": "Malaysia",
+        "emissionen": 11.83,
+        "type": "Land"
+    },
+    {
+        "name": "Philippines",
+        "emissionen": 70.69,
+        "type": "Land"
+    },
+    {
+        "name": "Poland",
+        "emissionen": 5.25,
+        "type": "Land"
+    },
+    {
+        "name": "Ukraine",
+        "emissionen": 5.47,
+        "type": "Land"
+    }
+]

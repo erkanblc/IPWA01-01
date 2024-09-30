@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>IPWA01</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style2.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <img src="img/WebAppLogo.jpg" alt="Logo" class="logo" />
+      <div>
+        <div class="welcome-text">Willkommen bei NoEmission</div>
+        <p class="sub-text">NoEmmision ist eine fiktive non profit organisation,</p>
+        <p class="sub-text">die sich Kaempft gegen den Klimawandel.</p>
+      </div>
+    </div>
+
+    <div class="search-and-links">
+      <div class="social-links">
+        <a href="https://www.instagram.com/WebAppStartup">Instagram</a>
+        <a href="https://www.facebook.com/WebAppStartup">Facebook</a>
+        <a href="#" onclick="showContent('Kontakt')">Kontakt</a>
+        <div class="search-container"></div>
+        <img src="img/Suchen-b.png" alt="Suchen" class="search-icon" width="30px"
+          onclick="toggleSearchForm()" />
+
+        <br>
+        <!-- Search form (initially hidden) -->
+        <form id="searchForm" style="display: none;" onsubmit="performGoogleSearch(event)">
+          <input type="text" name="search" class="form-control search-input" placeholder="Suche" required />
+          <button type="submit" class="btn btn-primary search-button">Suchen</button>
+        </form>
+      </div>
+    </div>
+
+    
+    <!-- Mobil Menü-->
+    <div class="menu-toggle" onclick="toggleMenu()">Menü</div>
+  </header>
+
+  <main>
+    
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showContent('content1')">Home</a></li>
+        <li><a href="#" onclick="showContent('content2')">Referenz</a></li>
+        <li><a href="#" onclick="toggleSubMenu()">Fussabdruck</a></li>
+        <ul id="subMenu" class="sub-menu">
+          <li><a href="#" onclick="showContent('content2-1')">Fussabdruck Unternehmen</a></li>
+          <li><a href="#" onclick="showContent('content2-2')">Fussabdruck Laender</a></li>
+          <li><a href="#" onclick="showContent('content2-3')">Fussabdruck Gesamt</a></li>
+        </ul>
+        <li><a href="#" onclick="showContent('content4')">Spenden</a></li>
+        <li><a href="#" onclick="showContent('content5')">Über uns</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <!-- Bereich : Home -->
+      <div id="content1" class="content-area active">
+        <h2>Daten zu den Co2 Emissionen</h2>
+        <p style="font-size: 20px;">Auf dieser WebSeite bekommen Sie aktuelle Informationen zu den Co2 Emissionen verschidener Laender und Unternehmen</p>
+        <img style="width: 100%; border-radius: 35px;" src="img/bg2.jpg" />
+      </div>
+      <!-- Bereich : Referenz -->
+      <div id="content2" class="content-area" >
+        <h2>Referenz</h2>
+        <p class="referenz-link"><a href="https://www.umweltbundesamt.de/" target="_blank">Umwelt Bundesamt</a></p>
+        <p class="referenz-link"><a href="https://www.myclimate.org/" target="_blank">MyClimate</a></p>
+        <p class="referenz-link"><a href="https://www.nature.org/en-us/" target="_blank">The Nature Conservancy</a></p>
+      </div>
+
+      <!-- Bereich : Fussabdruck Unternehmen -->
+      <div id="content2-1" class="content-area">
+        <h2>Fussabdruck Unternehmen</h2>
+        <div>
+          <label><input type="radio" name="dataFilter" value="name" checked> Unternehmensnamen-Daten anzeigen</label><br>
+          <label><input type="radio" name="dataFilter" value="emissionen"> Emissionsdaten des Unternehmens anzeigen</label>
+        </div>
+        <input type="text" id="searchInput" placeholder="Text Eingabe..." />
+
+        <div>
+          <label for="rowsPerPage"> Anzahl der anzuzeigenden Zeilen:</label>
+          <select id="rowsPerPage">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+
+        <!-- Tablo -->
+        <table id="emissionenTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Emissionen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JSON Data -->
+          </tbody>
+        </table>
+
+        <div class="pagination" id="pagination"></div>
+      </div>
+
+      <!-- Bereich : Fussabdruck Laender -->
+      <div id="content2-2" class="content-area">
+        <h2>Fussabdruck Laender</h2>
+
+        <div>
+          <label><input type="radio" name="dataFilterLaender" value="name" checked> Landnamendaten anzeigen</label><br>
+          <label><input type="radio" name="dataFilterLaender" value="emissionen"> Emissionsdaten der Laender anzeigen</label>
+        </div>
+        <input type="text" id="searchInputLaender" placeholder="Text Eingabe..." />
+
+        <div>
+          <label for="rowsPerPageLaender"> Anzahl der anzuzeigenden Zeilen:</label>
+          <select id="rowsPerPageLaender">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+
+        <!-- Tablo -->
+        <table id="emissionenTableLaender">
+          <thead>
+            <tr>
+              <th>Land</th>
+              <th>Emissionen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JSON Data -->
+          </tbody>
+        </table>
+
+        <div class="pagination" id="paginationLaender"></div>
+      </div>
+
+      <!-- Bereich : Fussabdruck Gesamt -->
+      <div id="content2-3" class="content-area">
+        <h2>Fussabdruck Gesamt</h2>
+        <div>
+          <label><input type="radio" name="dataFilterGesamt" value="name" checked> Unternehmensnamen-Daten anzeigen</label><br>
+          <label><input type="radio" name="dataFilterGesamt" value="emissionen"> Emissionsdaten des Unternehmens anzeigen</label><br>
+          <label><input type="radio" name="dataFilterGesamt" value="type"> Typdaten anzeigen</label>
+        </div>
+        <input type="text" id="searchInputGesamt" placeholder="Text Eingabe..." />
+
+        <div>
+          <label for="rowsPerPageGesamt"> Anzahl der anzuzeigenden Zeilen:</label>
+          <select id="rowsPerPageGesamt">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+
+        <!-- Tablo -->
+        <table id="gesamtTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Emissionen</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JSON Data -->
+          </tbody>
+        </table>
+
+        <div class="pagination" id="paginationGesamt"></div>
+      </div>
+
+      <!-- Bereich : Kontakt Form -->
+      <div id="Kontakt" class="content-area">
+        <h2>Kontakt</h2>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <label for="name" class="form-label">Vor- Nachname</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Vor-Nachname" required />
+
+          <label for="email" class="form-label">E-Mail</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="E-Mail" required />
+
+          <label for="message" class="form-label">Nachricht</label>
+          <textarea id="message" name="message" class="form-control" rows="4"
+            placeholder="Bitte schreiben Sie Ihre Nachricht hier..." required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div id="content4" class="content-area">
+        <h2>Spenden</h2>
+        <p>Diese Seite wird für Spenden gestaltet und kodiert</p>
+      </div>
+      <div id="content5" class="content-area">
+        <h2>Über Uns</h2>
+        <p style="font-size: 25px;">Gemeinsam für eine nachhaltige Zukunft</p>
+        <p>NoEmission setzt sich aktiv für den Schutz unserer Umwelt ein, um den kommenden Generationen eine lebenswerte Erde zu hinterlassen.</p>
+        <p>Unser Ziel ist es, durch innovative Projekte und Aufklärung den Klimawandel zu bekämpfen und nachhaltige Lösungen zu fördern.</p>
+        <p>Als gemeinnützige Organisation arbeiten wir eng mit lokalen Gemeinschaften und internationalen Partnern zusammen, um einen positiven Wandel zu bewirken.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="footermain">
+    <nav>
+      <ul>
+        <img class="footer-image"
+          src="img/Co2F.jpg" />
+        <li><a href="#">Datenschutz</a></li>
+        <li><a href="#">Impressum</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

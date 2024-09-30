@@ -1,0 +1,493 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    flex-direction: column; /* İçerikleri alt alta yerleştirir */
+    background-image: url('../img/bg1.jpg');
+    background-repeat: no-repeat;     /* Tekrar etmesin */
+    background-size: cover;           /* Sayfayı kaplasın */
+    background-position: center;      /* Resim ortalanarak yerleştirilsin */
+    background-attachment: fixed;
+}
+
+body {
+    width: 80%; /* Genişliği belirleyin, örneğin %80 */
+    max-width: 1200px; /* Maksimum genişlik */
+    padding: 20px; /* Kenarlardan boşluk bırakır */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    background-color: white; /* İsteğe bağlı arka plan rengi */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    border-radius: 40px;
+    background-color: #4CAF50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content img {
+    margin-right: 60px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+}
+
+.welcome-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.sub-text {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Instagram Facebook teil*/
+
+.search-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0px;
+    width: 100%;
+    
+}
+.search-and-links a{
+color: #fff;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+   
+}
+
+/* Suchen Artikel */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Sağ tarafa hizala */
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+#searchForm {
+    display: none;
+    /* Başlangıçta gizli */
+    margin-left: 10px;
+    flex-direction: row;
+}
+
+.search-input {
+    width: 200px;
+    margin-right: 10px;
+    height: 38px;
+}
+
+.search-button {
+    height: 38px;
+}
+
+.referenz-link a{
+    font-size: 20px;
+    color: white;
+}
+.referenz-link a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+.content{
+    opacity: 0.9;
+}
+
+.content-area {
+    display: none;
+}
+
+.content-area.active {
+    display: block;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+
+
+main {
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+
+main nav {
+    width: 35%;
+    float: left;
+    background-color: #388E3C;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-right: 10px;
+    
+}
+main nav ul{
+    margin-left: 15px;
+    margin-top: 35px;
+}
+main nav ul li a{
+    color: #fff;
+    
+}
+main nav ul li ul li a{
+    font-size: 5px;
+    color: #fff;
+    
+}
+
+main div.content {
+    width: 100%;
+    float: left;
+    background-color: #1B5E20;
+    padding: 20px;
+    border-radius: 40px;
+    margin-top: 15px;
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.sub-menu {
+    display: none;
+    padding-left: 20px;
+    font-size: 15px;
+    margin-top: 2px;
+    margin-left: 1px;
+}
+
+.sub-menu.active {
+    display: block;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #388E3C;
+    padding: 10px;
+    text-align: center;
+    border-radius: 40px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+    
+}
+
+
+
+
+/*table*/
+table {
+    width: 60%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    color: #000;
+}
+
+table th {
+    background-color: #A5D6A7;
+    font-size: 25px;
+}
+table td {
+    background-color: #C8E6C9; /* Tabloda hücreler için daha yumuşak bir yeşil */
+  }
+table th,
+table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+table th:first-child,
+table td:first-child {
+    width: 50%;
+    /* Name sütunu %60 genişlik alır */
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 50%;
+    /* Emissionen sütunu %40 genişlik alır */
+}
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Media */
+@media screen and (max-width: 767px) {
+    main {
+        display: block;
+    }
+
+    main nav {
+        width: 100%;
+    }
+
+    main nav,
+    main div#content {
+        width: 100%;
+    }
+}
+
+/**mobil menü*/
+
+
+
+
+
+
+
+
+/* Telefonlar (maksimum genişlik: 600px) için stil */
+@media (max-width: 600px) {
+    nav ul {
+      display: none; /* Menü varsayılan olarak gizli */
+      flex-direction: column;
+    }
+  
+    nav ul.show-menu {
+      display: flex;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-and-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Telefonlar için Menü açma/kapama butonu */
+    .menu-toggle {
+      display: inline-block;
+      cursor: pointer;
+      margin-top: 10px;
+      background-color: #4CAF50;
+      border: 1px solid white;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Tabletler (maksimum genişlik: 1024px) için stil */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+      display: none; /* Menü varsayılan olarak gizli */
+      flex-direction: column;
+    }
+  
+    nav ul.show-menu {
+      display: flex;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-and-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Tabletler için Menü açma/kapama butonu */
+    .menu-toggle {
+      display: inline-block;
+      cursor: pointer;
+      margin-top: 10px;
+      background-color: #156618;
+      border: 1px solid white;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Telefonlar (maksimum genişlik: 600px) için stil */
+@media (max-width: 600px) {
+    nav ul.main-menu {
+      display: none; /* Menü varsayılan olarak gizli */
+      flex-direction: column;
+    }
+  
+    nav ul.main-menu.show-menu {
+      display: flex;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-and-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Telefonlar için Menü açma/kapama butonu */
+    .menu-toggle {
+      display: inline-block;
+      cursor: pointer;
+      margin-top: 10px;
+      background-color: #4CAF50;
+      border: 1px solid white;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Tabletler (maksimum genişlik: 1024px) için stil */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    nav ul.main-menu {
+      display: none; /* Menü varsayılan olarak gizli */
+      flex-direction: column;
+    }
+  
+    nav ul.main-menu.show-menu {
+      display: flex;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-and-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Tabletler için Menü açma/kapama butonu */
+    .menu-toggle {
+      display: inline-block;
+      cursor: pointer;
+      margin-top: 10px;
+      background-color: #4CAF50;
+      border: 1px solid white;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Büyük ekranlar (1024px üstü) için normal görünüm */
+  @media (min-width: 1025px) {
+    nav ul.main-menu {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  /* Alt menü tasarımı */
+  .sub-menu {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .sub-menu.show {
+    display: block;
+  }
+  
